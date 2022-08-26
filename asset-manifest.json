@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Sea-Battle/static/css/main.b3b6e8b8.css",
+    "main.js": "/Sea-Battle/static/js/main.6262ffca.js",
+    "static/js/787.8f1aff30.chunk.js": "/Sea-Battle/static/js/787.8f1aff30.chunk.js",
+    "static/media/waternormals.jpeg": "/Sea-Battle/static/media/waternormals.537ec85b965d414829ab.jpeg",
+    "static/media/ship4_enemy.png": "/Sea-Battle/static/media/ship4_enemy.486585f969aa2d0c5d14.png",
+    "static/media/ship4_user.png": "/Sea-Battle/static/media/ship4_user.b6284097845d4d3f0fb0.png",
+    "static/media/ship3_user.png": "/Sea-Battle/static/media/ship3_user.302f1d460235c920a915.png",
+    "static/media/ship3_enemy.png": "/Sea-Battle/static/media/ship3_enemy.62268f8760925ae29daa.png",
+    "static/media/ship2_user.png": "/Sea-Battle/static/media/ship2_user.4743d028be850eb82ddc.png",
+    "static/media/ship2_enemy.png": "/Sea-Battle/static/media/ship2_enemy.4f9789694fd3db47886f.png",
+    "static/media/ship1_user.png": "/Sea-Battle/static/media/ship1_user.151cbdf760346a8dd932.png",
+    "static/media/ship1_enemy.png": "/Sea-Battle/static/media/ship1_enemy.e554d502773bfeadca03.png",
+    "static/media/base5.jpg": "/Sea-Battle/static/media/base5.46c293132afada691781.jpg",
+    "index.html": "/Sea-Battle/index.html",
+    "main.b3b6e8b8.css.map": "/Sea-Battle/static/css/main.b3b6e8b8.css.map",
+    "main.6262ffca.js.map": "/Sea-Battle/static/js/main.6262ffca.js.map",
+    "787.8f1aff30.chunk.js.map": "/Sea-Battle/static/js/787.8f1aff30.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3b6e8b8.css",
+    "static/js/main.6262ffca.js"
+  ]
+}
