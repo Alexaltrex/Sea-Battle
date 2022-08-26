@@ -1,0 +1,60 @@
+@import "../../assets/scss/app";
+
+.moveList {
+  position: fixed;
+  z-index: 2;
+  top: 66px;
+  left: 16px;
+  bottom: 8px;
+  width: 116px;
+  //background: dimgray;
+  overflow: auto;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .moveListItem {
+    display: flex;
+    font-size: 12px;
+
+    .mover {
+      width: 32px;
+      //text-transform: uppercase;
+      font-weight: bold;
+      color: darkgreen;
+
+      &_enemy {
+        color: darkred;
+      }
+    }
+
+    .coord {
+      width: 20px;
+      span {
+        color: dimgrey;
+
+        &:nth-child(1), &:nth-child(3) {
+          font-weight: bold;
+          color: #000;
+        }
+      }
+    }
+
+    .status {
+      margin-left: 10px;
+      color: #404040;
+
+      &_injury {
+        color: #990097;
+      }
+      &_killed {
+        color: red;
+        //color: #002d00;
+      }
+
+    }
+
+  }
+}

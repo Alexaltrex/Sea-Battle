@@ -1,0 +1,81 @@
+@import "../../../assets/scss/app";
+
+.selectShips {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .btns {
+    display: flex;
+
+    .btn {
+      @include button;
+      padding: 2px 3px;
+      position: relative;
+      color: #FFF;
+      transition: 0.2s;
+
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+
+      &:hover {
+        background: #ff7171;
+      }
+
+      &_selected {
+        background: #ff3636;
+
+        &:hover {
+          background: #ff3636;
+        }
+      }
+
+      &:disabled {
+        //background: grey;
+        cursor: auto;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 999;
+          content: "";
+          display: block;
+          background: rgba(0,0,0,0.5);
+        }
+
+        &:hover {
+          background: transparent;
+        }
+      }
+
+      .img {
+        height: 45px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .label {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        color: blue;
+        right: 0;
+        bottom: 0;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+    }
+
+  }
+
+
+
+
+
+}

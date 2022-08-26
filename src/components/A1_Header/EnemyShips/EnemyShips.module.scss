@@ -1,0 +1,51 @@
+@import "../../../assets/scss/app";
+
+.enemyShips {
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+
+  .ship {
+    position: relative;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+
+    .img {
+      height: 42px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .size {
+      position: absolute;
+      font-family: arial;
+      z-index: 2;
+      color: blue;
+      right: -8px;
+      bottom: 0;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .close {
+      @include absoluteCenter;
+      z-index: 3;
+      height: 50px;
+      width: 50px;
+
+      svg {
+        height: 50px;
+        width: 50px;
+
+        path {
+          fill: red;
+        }
+      }
+
+    }
+  }
+}

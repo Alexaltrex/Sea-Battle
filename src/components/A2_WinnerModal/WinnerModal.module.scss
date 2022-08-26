@@ -1,0 +1,39 @@
+@import "../../assets/scss/app";
+
+.winnerModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0,0,0,0.75);
+  @include centerColumn;
+
+  .winner {
+    font-size: 64px;
+    font-weight: bold;
+    color: lawngreen;
+
+    &_fail {
+      color: red;
+    }
+
+  }
+
+  .closeBtn {
+    margin-top: 10px;
+    @include button;
+    padding: 8px 32px;
+    border-radius: 100px;
+    background: darkgreen;
+    color: #FFF;
+    font-size: 32px;
+    transition: 0.3s;
+
+    &:hover {
+      background: green;
+    }
+  }
+
+}

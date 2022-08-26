@@ -1,0 +1,51 @@
+@import "../../assets/scss/app";
+
+.selectPlacingTypeModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0,0,0,0.5);
+  @include centerColumn;
+
+  .card {
+    padding: 64px;
+    border-radius: 24px;
+    background: rgba(0,0,0,0.75);
+    @include centerColumn;
+
+    .title {
+      font-size: 24px;
+      color: #FFF;
+    }
+
+    .buttons {
+      margin-top: 24px;
+
+      .btn {
+        @include button;
+        padding: 16px 24px;
+        border-radius: 100px;
+        background: darkgreen;
+        color: #FFF;
+        font-size: 16px;
+        transition: 0.3s;
+
+        &:hover {
+          background: green;
+        }
+
+        &:disabled {
+          background: grey;
+          cursor: auto;
+        }
+
+        &:last-child {
+          margin-left: 32px;
+        }
+      }
+    }
+  }
+  }

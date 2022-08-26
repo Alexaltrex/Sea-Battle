@@ -1,0 +1,23 @@
+@import "../../assets/scss/app";
+
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f5ddb5;
+
+  .wrapper {
+    height: 100vh;
+    display: flex;
+    color: #535600;
+  }
+
+  .navInfo {
+    position: fixed;
+    z-index: 999;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

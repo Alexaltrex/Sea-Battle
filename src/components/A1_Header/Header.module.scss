@@ -1,0 +1,103 @@
+@import "../../assets/scss/app";
+
+.header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  box-sizing: border-box;
+
+  .startBtn {
+    @include button;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background: darkgreen;
+    color: #FFF;
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:hover {
+      background: green;
+    }
+
+    &:disabled {
+      background: grey;
+      cursor: auto;
+    }
+
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logoWrapper {
+        height: 50px;
+        width: 200px;
+        margin-right: 20px;
+      }
+
+
+      .status {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .moveList {
+    height: calc(100vh - 10px - 35px - 32px);
+    overflow: auto;
+    margin-top: 10px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .moveListItem {
+      display: flex;
+      font-size: 12px;
+
+      .mover {
+        width: 32px;
+        //text-transform: uppercase;
+        font-weight: bold;
+        color: darkgreen;
+
+        &_enemy {
+          color: darkred;
+        }
+      }
+
+      .coord {
+        span {
+          color: dimgrey;
+
+          &:nth-child(2), &:nth-child(4) {
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+
+      .status {
+        margin-left: 10px;
+        //color: dimgray;
+        &_injury {
+          color: orange;
+        }
+        &_killed {
+          color: red;
+        }
+
+      }
+
+    }
+  }
+
+}
