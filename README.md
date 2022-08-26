@@ -7,7 +7,7 @@ Link: https://alexaltrex.github.io/Sea-Battle/
 </div>
 
 ## Description
-Web application build with React, Redux Toolkit and RTK Query as a data fetching and caching tool. 
+3D version of "Sea Battle" game.
 
 ## Development
 * app based on React
